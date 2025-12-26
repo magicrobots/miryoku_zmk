@@ -1,0 +1,16 @@
+# Copyright 2025 Zaxxon
+name: 'Build Swweeep Magicrobots'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano"]'
+      shield: '["swweeep_left nice_view_adapter nice_view", "swweeep_right nice_view_adapter nice_view"]'
+      kconfig: |
+        ["CONFIG_ZMK_POINTING=y
+        CONFIG_ZMK_POINTING_SMOOTH_SCROLLING=y
+        CONFIG_ZMK_SLEEP=y
+        CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=600000
+        CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y"]
