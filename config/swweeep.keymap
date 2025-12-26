@@ -14,4 +14,4 @@
 
 /* These defines must come after the miryoku includes to avoid redefinition errors */
 #undef ZMK_POINTING_DEFAULT_MOVE_VAL
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2400
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2200
