@@ -9,9 +9,10 @@ jobs:
       board: '["nice_nano"]'
       shield: '["swweeep_left nice_view_adapter nice_view", "swweeep_right nice_view_adapter nice_view"]'
       custom_config: |
-        ["#define U_BTN1 &mkp MB2
-        #define U_BTN2 &mkp MB3
-        #define U_BTN3 &mkp MB1"]
+        ["#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+        #define U_MS_BTN_1 &mkp MB2
+        #define U_MS_BTN_2 &mkp MB3
+        #define U_MS_BTN_3 &mkp MB1"]
       kconfig: |
         ["CONFIG_ZMK_POINTING=y
         CONFIG_ZMK_POINTING_SMOOTH_SCROLLING=y
