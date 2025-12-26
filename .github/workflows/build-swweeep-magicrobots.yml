@@ -1,4 +1,4 @@
-# Copyright 2025 Zaxxon
+# Copyright 2025 Magic Robots :)
 name: 'Build Swweeep Magicrobots'
 on: workflow_dispatch
 jobs:
